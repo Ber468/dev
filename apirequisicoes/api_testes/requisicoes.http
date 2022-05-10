@@ -1,0 +1,44 @@
+# Obter a lista de requisicoes
+GET http://localhost:3000/api/requisicoes
+Content-Type: application/json
+###
+
+# Inserir novo requisicao
+POST http://localhost:3000/api/requisicoes
+Content-Type: application/json
+
+{
+ "titulo": "Dourado", "descricao": "amarelo",
+"dataHoraCriada": "2020-11-25T17:32:25.000Z", "status": "19",
+"prazoAtendimento": "2020-11-25T17:32:25.000Z", "TipoRequisicao": "623b1418d069f6bfd91dc702",
+"Solicitante": "623b13d3d069f6bfd91dc6f9"
+}
+###
+
+# Alterar requisicao
+PUT http://localhost:3000/api/requisicoes
+Content-Type: application/json
+
+{
+ "_id": "623b14afd069f6bfd91dc70d",
+"titulo": "Abacate", "descricao": "verde",
+"dataHoraCriada": "2020-11-25T17:32:25.000Z", "status": "",
+"prazoAtendimento": "2020-11-25T17:32:25.000Z", "TipoRequisicao": "623b1418d069f6bfd91dc702",
+"Solicitante": "623b13d3d069f6bfd91dc6f9"
+}
+###
+
+# Excluir um requisicao
+DELETE http://localhost:3000/api/requisicoes/6231cf7edaa417e2852210c5
+Content-Type: application/json
+###
+
+# Obter pelo id de requisicao
+GET http://localhost:3000/api/requisicoes/623b14afd069f6bfd91dc70d
+Content-Type: application/json
+###
+
+# Obter requisicoes filtrando
+GET http://localhost:3000/api/requisicoes/filtro/Abacate
+Content-Type: application/json
+###

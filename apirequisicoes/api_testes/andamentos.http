@@ -1,0 +1,42 @@
+# Obter a lista de andamentos
+GET http://localhost:3000/api/andamentos
+Content-Type: application/json
+###
+
+# Inserir novo andamento
+POST http://localhost:3000/api/andamentos
+Content-Type: application/json
+
+{
+"dataHora": "2020-11-25T17:32:25.000Z",
+ "titulo": "Mar vermelho", "descricao": "vermelho","Colaborador": "623b060c0224d91090571662",
+"Atividade": "623b1ab295f889366ba4d0b0"
+}
+###
+
+# Alterar andamento
+PUT http://localhost:3000/api/andamentos
+Content-Type: application/json
+
+{
+ "_id": "623b1b9495f889366ba4d0c6",
+"dataHora": "2020-11-25T17:32:25.000Z",
+ "titulo": "Mar vermelho", "descricao": "imenso","Colaborador": "623b060c0224d91090571662",
+"Atividade": "623b1ab295f889366ba4d0b0"
+}
+###
+
+# Excluir um andamento
+DELETE http://localhost:3000/api/andamentos/6231cf7edaa417e2852210c5
+Content-Type: application/json
+###
+
+# Obter pelo id de andamento
+GET http://localhost:3000/api/andamentos/623b14afd069f6bfd91dc70d
+Content-Type: application/json
+###
+
+# Obter andamentos filtrando
+GET http://localhost:3000/api/andamentos/filtro/Abacate
+Content-Type: application/json
+###

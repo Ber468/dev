@@ -1,0 +1,38 @@
+# Obter a lista de TipoRequisicoes
+GET http://localhost:3000/api/TipoRequisicoes
+Content-Type: application/json
+###
+
+# Inserir novo TipoRequisicao
+POST http://localhost:3000/api/TipoRequisicoes
+Content-Type: application/json
+
+{
+ "descricao": "Objeto1"
+}
+###
+
+# Alterar TipoRequisicao
+PUT http://localhost:3000/api/TipoRequisicoes
+Content-Type: application/json
+
+{
+ "_id": "623b1418d069f6bfd91dc702",
+ "descricao": "Objeto2"
+}
+###
+
+# Excluir um TipoRequisicao
+DELETE http://localhost:3000/api/TipoRequisicoes/6231cf7edaa417e2852210c5
+Content-Type: application/json
+###
+
+# Obter pelo id de TipoRequisicao
+GET http://localhost:3000/api/TipoRequisicoes/623b1418d069f6bfd91dc702
+Content-Type: application/json
+###
+
+# Obter TipoRequisicoes filtrando
+GET http://localhost:3000/api/TipoRequisicoes/filtro/Objeto2
+Content-Type: application/json
+###

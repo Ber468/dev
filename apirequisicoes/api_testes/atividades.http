@@ -1,0 +1,44 @@
+# Obter a lista de atividades
+GET http://localhost:3000/api/atividades
+Content-Type: application/json
+###
+
+# Inserir novo atividade
+POST http://localhost:3000/api/atividades
+Content-Type: application/json
+
+{
+ "titulo": "Raio Solar", "descricao": "sol",
+"status": "190", "prazo": "2020-11-25T17:32:25.000Z", 
+"agendaInicio": "2020-11-25T17:32:25.000Z", "dataHoraTermino": "2020-11-25T17:32:25.000Z",
+"Colaborador": "623b060c0224d91090571662", "Requisicao": "623b14afd069f6bfd91dc70d"
+}
+###
+
+# Alterar atividade
+PUT http://localhost:3000/api/atividades
+Content-Type: application/json
+
+{
+ "_id": "623b1ab295f889366ba4d0b0",
+ "titulo": "Raio Solar", "descricao": "sol",
+"status": "220", "prazo": "2020-11-25T17:32:25.000Z", 
+"agendaInicio": "2020-11-25T17:32:25.000Z", "dataHoraTermino": "2020-11-25T17:32:25.000Z",
+"Colaborador": "623b060c0224d91090571662", "Requisicao": "623b14afd069f6bfd91dc70d"
+}
+###
+
+# Excluir um atividade
+DELETE http://localhost:3000/api/atividades/6231cf7edaa417e2852210c5
+Content-Type: application/json
+###
+
+# Obter pelo id de atividade
+GET http://localhost:3000/api/atividades/623b1ab295f889366ba4d0b0
+Content-Type: application/json
+###
+
+# Obter atividades filtrando
+GET http://localhost:3000/api/atividades/filtro/Abacate
+Content-Type: application/json
+###
